@@ -72,7 +72,7 @@ module.exports = {
         green: colors.emerald,
         gray: colors.neutral,
       },
-      typography: (theme) => ({
+      typography: (theme: (arg0: string) => any) => ({
         DEFAULT: {
           css: {
             color: theme('colors.gray.700'),
