@@ -174,7 +174,7 @@ export default function Home() {
         <div>
           {!posts.length && 'No posts found.'}
           {posts.slice(0, 5).map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+            const { slug, date, title, summary, tags } = frontMatter as any
             return (
               <Link
                 href={`/blog/${slug}`}
