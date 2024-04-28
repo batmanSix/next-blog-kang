@@ -10,8 +10,7 @@ import Typewriter from 'typewriter-effect'
 import ThemeSwitch from "@/components/ThemeSwitch";
 import { Provider } from '@lyket/react'
 import MobileNav from "@/components/MobileNav";
-
-
+import ProgressBars from 'react-scroll-progress-bar'
 interface ThemeProviderProps {
   colors?: any
   fonts?: any
@@ -39,10 +38,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-
+      <ProgressBars bgcolor="#DE1D8D" />
       <body className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
         <Provider apiKey={"2"}>
-
           <ThemeProvider attribute="class" defaultTheme={defaultTheme as string}>
             <div className="flex w-full justify-between py-10">
               <div>
