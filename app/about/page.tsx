@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import services from "@/constant/services"
 import { fadeIn, textVariant } from "@/lib/Motion";
 import Image from "next/image";
+import TechStack from "@/components/TechStack";
 
 const defaultOptions = {
   reverse: false,  // reverse the tilt direction
@@ -67,6 +68,20 @@ const AboutPage = () => {
       </div>
       <div className="mt-10">
         <p className="text-2xl font-medium">Current Favorite Tech Stack</p>
+        <figure className='mt-2'>
+          {/* <TechStack /> */}
+        </figure>
+      </div>
+
+      <div className='py-6'>
+        <h2 className="text-2xl font-medium">Contact</h2>
+        <article className='prose mt-4 dark:prose-invert'>
+          <p>
+            Do contact me if you need my opinion about web development,
+            especially frontend works. I’ll be happy to help! (find my email
+            in the footer)
+          </p>
+        </article>
       </div>
 
     </>

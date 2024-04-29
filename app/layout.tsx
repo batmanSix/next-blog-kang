@@ -46,20 +46,24 @@ export default function RootLayout({
   }, [path])
   return (
     <html lang="en">
-      {
-        scroll && <ProgressBars bgcolor="#DE1D8D" />
-      }
-      <body className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0 pt-14 ">
+      <body className="">
+        {
+          scroll && <ProgressBars bgcolor="#DE1D8D" />
+        }
         <Provider apiKey={"2"}>
           <ThemeProvider attribute="class" defaultTheme={defaultTheme as string}>
-            <NavBar></NavBar>
-            <ProgressBar
-              height="2px"
-              color="#DE1D8D"
-              options={{ showSpinner: false }}
-              shallowRouting
-            />
-            {children}
+
+            <div className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0 pt-14 ">
+              <NavBar></NavBar>
+              <ProgressBar
+                height="2px"
+                color="#DE1D8D"
+                options={{ showSpinner: false }}
+                shallowRouting
+              />
+              {children}
+            </div>
+
           </ThemeProvider>
         </Provider>
       </body>
