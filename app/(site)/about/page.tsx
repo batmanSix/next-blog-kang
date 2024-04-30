@@ -69,13 +69,13 @@ const AboutPage = () => {
       <div className="mt-10">
         <p className="text-2xl font-medium">Current Favorite Tech Stack</p>
         <figure className='mt-2'>
-          {/* <TechStack /> */}
+          <TechStack />
         </figure>
       </div>
 
       <div className='py-6'>
         <h2 className="text-2xl font-medium">Contact</h2>
-        <article className='prose mt-4 dark:prose-invert'>
+        <article className='w-72 mt-4'>
           <p>
             Do contact me if you need my opinion about web development,
             especially frontend works. I’ll be happy to help! (find my email
